@@ -2,7 +2,7 @@
 - hosts: test
   sudo: yes
   vars:
-    correct_short_hostname: "default.berlin.de.example.com"
+    correct_short_hostname: "play.berlin.de.example.com"
   #remote_user: root
   roles:
     - ansible-hostname
