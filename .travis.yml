@@ -18,7 +18,7 @@ script:
     - ansible-playbook -i tests/test_default.ini tests/test_default.yml --syntax-check
 
     # 2nd:  Make sure we run the entire playbook
-    - ansible-playbook -i tests/test_default.ini tests/test_default.yml--sudo
+    - ansible-playbook -i tests/test_default.ini tests/test_default.yml --sudo
 
     # 3rd:  Make sure our playbook is idempotent
     - >
