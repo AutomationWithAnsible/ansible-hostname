@@ -27,7 +27,7 @@ hostname_sub_replace  :  false
 
 hostname_hosts_file   :
                         - regexp : "^127.0.0.1"
-                          line   : "127.0.0.1{{'\t'}}localhost"
+                          line   : "127.0.0.1  localhost"
 
                         - regexp : "^127.0.1.1"
                           line   : "127.0.1.1{{ lookup('template', '../templates/hosts_file.j2') }}"
