@@ -15,14 +15,14 @@ install:
 
 script:
     # 1st: check syntax
-    - ansible-playbook -i tests/inv.ini tests/test_travis.yml --syntax-check
+    - ansible-playbook -i tests/inv.ini tests/test_default.yml --syntax-check
 
     # 2nd:  Make sure we run the entire playbook
-    - ansible-playbook -i tests/inv.ini tests/test_travis.yml --sudo
+    - ansible-playbook -i tests/inv.ini tests/test_default.yml--sudo
 
     # 3rd:  Make sure our playbook is idempotent
     - >
-      ansible-playbook -i tests/option1.ini tests/test_travis.yml --sudo
+      ansible-playbook -i tests/option1.ini tests/test_default.yml --sudo
       | grep -q 'changed=0.*failed=0'
       && (echo 'Idempotence test: pass' && exit 0)
       || (echo 'Idempotence test: fail' && exit 1)
