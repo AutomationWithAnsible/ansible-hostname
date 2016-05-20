@@ -5,7 +5,7 @@ A role to manage hostnames. This roles does a number of different things in non 
 
 Requirements
 ------------
-tested on Ubuntu 12.04 and ansible > 1.6
+tested on Ubuntu 12.04 and ansible > 1.9
 
 ### Variables
 ``` 
