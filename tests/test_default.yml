@@ -1,6 +1,6 @@
 ---
 - hosts: test
-  sudo: yes
+  become: yes
   vars:
     correct_short_hostname: "play.berlin.de.example.com"
   #remote_user: root

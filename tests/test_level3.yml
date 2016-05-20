@@ -1,6 +1,6 @@
 - name: Test level 3
   hosts: test
-  sudo: yes
+  become: yes
   vars:
     hostname_sub_level     : 3
     correct_short_hostname : "level.berlin.de"
