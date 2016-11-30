@@ -1,0 +1,9 @@
+---
+username: kitchen
+ssh_key: "/Users/ahelal/GDrive/Projects/ansible-hostname/.kitchen/docker_id_rsa"
+image_id: fe00bd966cad
+container_id: 6cfb30b2ef645b62c964b9d4c73ded07ae6c6d231dd0c4470f461b77f7104321
+hostname: localhost
+port: 32795
+last_action: converge
+last_error: 

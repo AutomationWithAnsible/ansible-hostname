@@ -1,0 +1,7 @@
+I, [2016-11-30T12:35:59.715678 #517]  INFO -- ansibleV20-ubuntu1604: -----> Destroying <ansibleV20-ubuntu1604>...
+I, [2016-11-30T12:35:59.716309 #517]  INFO -- ansibleV20-ubuntu1604: Finished destroying <ansibleV20-ubuntu1604> (0m0.00s).
+     COMMAND
+I, [2016-11-30T12:35:58.881144 #517]  INFO -- ansibleV20-ubuntu1604: 2052                root                0:00                /usr/sbin/sshd -D -o UseDNS=no -o UsePAM=no -o PasswordAuthentication=yes -o UsePrivilegeSeparation=no -o PidFile=/tmp/sshd.pid
+I, [2016-11-30T12:35:59.601920 #517]  INFO -- ansibleV20-ubuntu1604: 815cb6ab0b83a975cb05fa4ff90e7a74511b61757add1a3ad8e0d078c6a5d87b
+I, [2016-11-30T12:35:59.698097 #517]  INFO -- ansibleV20-ubuntu1604: 815cb6ab0b83a975cb05fa4ff90e7a74511b61757add1a3ad8e0d078c6a5d87b
+I, [2016-11-30T12:35:59.715265 #517]  INFO -- ansibleV20-ubuntu1604: Finished destroying <ansibleV20-ubuntu1604> (0m0.88s).

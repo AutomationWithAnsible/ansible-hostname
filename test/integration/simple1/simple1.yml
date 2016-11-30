@@ -1,0 +1,7 @@
+---
+- name         : Simple1
+  hosts        : "all"
+  gather_facts : True
+  become       : True
+  roles:
+    - ansible-hostname

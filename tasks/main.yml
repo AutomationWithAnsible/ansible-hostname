@@ -37,4 +37,5 @@
     regexp: "{{item.regexp}}"
     line: "{{item.line}}"
     state: present
+    unsafe_writes: "{{ hostname_safe_write }}"
   with_items: "{{hostname_hosts_file}}"

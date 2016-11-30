@@ -1,0 +1,7 @@
+I, [2016-11-30T12:36:01.413769 #517]  INFO -- ansibleV22-ubuntu1604: -----> Destroying <ansibleV22-ubuntu1604>...
+I, [2016-11-30T12:36:01.414497 #517]  INFO -- ansibleV22-ubuntu1604: Finished destroying <ansibleV22-ubuntu1604> (0m0.00s).
+     COMMAND
+I, [2016-11-30T12:36:00.558256 #517]  INFO -- ansibleV22-ubuntu1604: 2222                root                0:00                /usr/sbin/sshd -D -o UseDNS=no -o UsePAM=no -o PasswordAuthentication=yes -o UsePrivilegeSeparation=no -o PidFile=/tmp/sshd.pid
+I, [2016-11-30T12:36:01.289668 #517]  INFO -- ansibleV22-ubuntu1604: 0b4ca3a91319a678aa17b9f04f8fcc3796c1b5938b4ad34e2349b886071e2706
+I, [2016-11-30T12:36:01.392134 #517]  INFO -- ansibleV22-ubuntu1604: 0b4ca3a91319a678aa17b9f04f8fcc3796c1b5938b4ad34e2349b886071e2706
+I, [2016-11-30T12:36:01.413288 #517]  INFO -- ansibleV22-ubuntu1604: Finished destroying <ansibleV22-ubuntu1604> (0m0.90s).

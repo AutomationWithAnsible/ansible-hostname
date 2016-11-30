@@ -1,0 +1,6 @@
+I, [2016-11-30T12:35:59.717435 #517]  INFO -- ansibleV22-ubuntu1404: -----> Destroying <ansibleV22-ubuntu1404>...
+I, [2016-11-30T12:35:59.763697 #517]  INFO -- ansibleV22-ubuntu1404: PID                 USER                TIME                COMMAND
+I, [2016-11-30T12:35:59.763824 #517]  INFO -- ansibleV22-ubuntu1404: 2136                root                0:00                /usr/sbin/sshd -D -o UseDNS=no -o UsePAM=no -o PasswordAuthentication=yes -o UsePrivilegeSeparation=no -o PidFile=/tmp/sshd.pid
+I, [2016-11-30T12:36:00.393423 #517]  INFO -- ansibleV22-ubuntu1404: d8604bbe0b58e55cfc6a87b408bfad360eb1e3a28887f16ebdd92c10938abc5e
+I, [2016-11-30T12:36:00.490675 #517]  INFO -- ansibleV22-ubuntu1404: d8604bbe0b58e55cfc6a87b408bfad360eb1e3a28887f16ebdd92c10938abc5e
+I, [2016-11-30T12:36:00.507388 #517]  INFO -- ansibleV22-ubuntu1404: Finished destroying <ansibleV22-ubuntu1404> (0m0.79s).
