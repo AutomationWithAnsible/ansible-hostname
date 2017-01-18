@@ -1,0 +1,34 @@
+---
+
+- name: redhat | check /etc/sysconfig/network
+  stat:
+    path="/etc/sysconfig/network"
+    get_md5="no"
+    get_checksum="no"
+  register: hostname_network_file
+
+- name: redhat | check /etc/sysconfig/network
+  lineinfile:
+    dest="/etc/sysconfig/network"
+    regexp="^HOSTNAME="
+    line="HOSTNAME={{ inventory_hostname.split(".")[0]  }}"
+    state="present"
+    unsafe_writes="{{ hostname_safe_write }}"
+  when: "{{ hostname_network_file.stat.exists }}"
+
+- name: redhat | check /etc/cloud/cloud.cfg
+  stat:
+    path="/etc/cloud/cloud.cfg"
+    get_md5="no"
+    get_checksum="no"
+  register: hostname_network_file
+
+- name: redhat | check /etc/cloud/cloud.cfg
+  lineinfile:
+    dest: "/etc/cloud/cloud.cfg"
+    regexp: "preserve_hostname"
+    line: 'preserve_hostname: true'
+    insertafter: "EOF"
+    state: "present"
+    unsafe_writes: "{{ hostname_safe_write }}"
+  when: "{{ hostname_network_file.stat.exists }}"

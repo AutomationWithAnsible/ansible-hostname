@@ -1,3 +1,5 @@
+---
+
 - name: Temp override for "hostname_fqdn"
   set_fact:
     hostname_fqdn  : "{{ inventory_hostname }}"
@@ -39,3 +41,7 @@
     state: present
     unsafe_writes: "{{ hostname_safe_write }}"
   with_items: "{{hostname_hosts_file}}"
+
+- name: Include redhat
+  include: redhat.yml
+  when: ansible_os_family == "RedHat"
