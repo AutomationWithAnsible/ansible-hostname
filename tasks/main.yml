@@ -16,6 +16,10 @@
     hostname_short : "{{ lookup('template', '../templates/shortname.j2') }}"
   when: hostname_short is not defined
 
+- name: Set machine hostname
+  hostname:
+    name: "{{ hostname_short }}"
+
 - name: Temp override facts "hostname_short"
   set_fact:
     ansible_hostname  : "{{ hostname_short }}"
@@ -38,10 +42,7 @@
     unsafe_writes: "{{ hostname_safe_write }}"
   with_items: "{{hostname_hosts_file}}"
 
-- name: Set machine hostname
-  hostname:
-    name: "{{ hostname_short }}"
-
 - name: Include redhat
   include: redhat.yml
   when: ansible_os_family == "RedHat"
+  
