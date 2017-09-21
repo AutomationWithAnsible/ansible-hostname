@@ -1,6 +1,0 @@
-I, [2016-11-30T12:35:57.903855 #517]  INFO -- ansibleV20-ubuntu1404: -----> Destroying <ansibleV20-ubuntu1404>...
-I, [2016-11-30T12:35:58.032542 #517]  INFO -- ansibleV20-ubuntu1404: PID                 USER                TIME                COMMAND
-I, [2016-11-30T12:35:58.032674 #517]  INFO -- ansibleV20-ubuntu1404: 1983                root                0:00                /usr/sbin/sshd -D -o UseDNS=no -o UsePAM=no -o PasswordAuthentication=yes -o UsePrivilegeSeparation=no -o PidFile=/tmp/sshd.pid
-I, [2016-11-30T12:35:58.692359 #517]  INFO -- ansibleV20-ubuntu1404: 272c9c0fe8831613464d4568c90eba4f8d41b2e11b7fbe0d03bd4fb8c7b66449
-I, [2016-11-30T12:35:58.807759 #517]  INFO -- ansibleV20-ubuntu1404: 272c9c0fe8831613464d4568c90eba4f8d41b2e11b7fbe0d03bd4fb8c7b66449
-I, [2016-11-30T12:35:58.827789 #517]  INFO -- ansibleV20-ubuntu1404: Finished destroying <ansibleV20-ubuntu1404> (0m0.92s).
