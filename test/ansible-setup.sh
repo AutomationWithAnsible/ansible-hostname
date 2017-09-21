@@ -3,7 +3,7 @@ set -e
 echo "Running travis "
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-SETUP_VERSION="v0.0.5"
+SETUP_VERSION="v1.0.0"
 #SETUP_VERBOSITY="vv"
 
 ## Install Ansible 2.0
