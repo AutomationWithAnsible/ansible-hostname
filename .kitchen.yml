@@ -4,6 +4,7 @@ driver                    :
     socket                : unix:///var/run/docker.sock
     use_sudo              : false
     privileged            : true
+    require_chef_omnibus  : false
 
 provisioner:
     name                  : ansible_push
@@ -28,6 +29,8 @@ platforms:
    driver_config          :
      image                : ubuntu:xenial
      platform             : ubuntu
+     provision_command:
+       - apt-get install -y python-minimal
 
  - name                   : centos7
    driver_config          :
@@ -43,5 +46,5 @@ suites                    :
   - name                  : simple2
     provisioner           :
       playbook            : "test/integration/simple2/simple2.yml"
-      ansible_playbook_bin: "$(avm path v2.2)ansible-playbook"
+      #ansible_playbook_bin: "$(avm path v2.2)ansible-playbook"
 
