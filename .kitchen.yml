@@ -38,13 +38,7 @@ platforms:
     platform              : centos
 
 suites                    :
-#   - name                  : simple1
-#     provisioner           :
-#       playbook            : "test/integration/simple1/simple1.yml"
-#       ansible_playbook_bin: "$(avm path v2.0)ansible-playbook"
-
-  - name                  : simple2
+  - name                  : simple-tests
     provisioner           :
-      playbook            : "test/integration/simple2/simple2.yml"
-      #ansible_playbook_bin: "$(avm path v2.2)ansible-playbook"
-
+      playbook            : "test/integration/simple-tests/play.yml"
+      ansible_playbook_bin: "$(avm path v2.2)ansible-playbook"
